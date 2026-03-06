@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/temp
 /.pnp
 .pnp.js
 
@@ -11,7 +12,6 @@
 # next.js
 /.next/
 /out/
-
 # production
 /build
 
@@ -19,7 +19,12 @@
 .DS_Store
 *.pem
 .swc
-
+.npmrc
+*-lock.json
+*-lock.yaml
+node_modules/
+temp/
+.jfrog/
 # debug
 npm-debug.log*
 yarn-debug.log*
