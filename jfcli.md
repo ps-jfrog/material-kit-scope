@@ -17,6 +17,8 @@
 
 We attempted to reproduce the issue described in [ARTIFACTORY: Installation of NPM scoped packages may return 400 errors after upgrading to version 7.98.7 and 7.98.8](https://jfrog.com/help/r/artifactory-how-to-fix-400-bad-request-issue-when-installing-npm-packages/artifactory-installation-of-npm-scoped-packages-may-return-400-errors-after-upgrading-to-version-7.98.7-and-7.98.8) but were **unable to reproduce** it on either Artifactory **7.125.6** or **7.133.6**.
 
+**Note:** This can be reproduced only if the npm virtual repository does not have a default deployment repository configured.
+
 ### Using JFrog CLI
 
 The scoped package `@psjfrog/material-kit-scope` was built, published, and deployed successfully via `jf npm publish` with no `400 Bad Request` errors. Full output is available in [jfcli_run_success_output.md](jfcli_run_success_output.md).
